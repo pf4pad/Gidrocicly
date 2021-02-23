@@ -61,6 +61,7 @@ ul, li {
 a {
   color: inherit;
   text-decoration: none;
+  display: inline-block;
 }
 
 body {
@@ -75,6 +76,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.page-section {
+  margin-bottom: 80px;
 }
 
 .header__top-inner {
@@ -109,7 +114,7 @@ body {
 .header__adress::before {
   position: absolute;
   content: '';
-  background-image: url(../images/adress.svg);
+  background-image: url("../images/adress.svg");
   width: 30px;
   height: 30px;
   left: 0;
@@ -148,7 +153,7 @@ body {
 }
 
 .header__bottom {
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .menu-categories {
@@ -252,6 +257,9 @@ body {
   text-align: center;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sale-item__top {
@@ -272,11 +280,16 @@ body {
 
 .sale-item__price {
   text-align: right;
+  position: relative;
+}
+
+.price {
+  font-family: 'Barlow-Regular', sans-serif;
 }
 
 .sale-item__price-new {
   position: relative;
-  font-family: Barlow;
+  font-family: 'Barlow-Bold', sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 32px;
@@ -289,30 +302,120 @@ body {
   position: absolute;
   content: '';
   right: -2px;
-  top: 8px;
-  background-image: url(../images/content/ruble.svg);
+  top: 6px;
+  background-image: url("../images/content/ruble.svg");
   width: 15px;
   height: 18px;
 }
 
 .sale-item__price-old {
   position: relative;
-  font-family: Barlow;
-  font-style: normal;
+  display: inline-block;
+  font-family: 'Barlow-Regular', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #C4C4C4;
+  margin-right: 15px;
+  background-image: url("../images/old-line.svg");
+  padding: 2px 5px;
+  background-repeat: no-repeat;
 }
 
-.sale-item__price-old::before {
+.sale-item__price-old::after {
   position: absolute;
   content: '';
-  left: 0;
-  bottom: 0;
-  background-image: url(../cold-line.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  right: -12px;
+  top: 4px;
+  background-image: url("../images/content/ruble-old.svg");
+  width: 8px;
+  height: 10px;
+}
+
+.sale-item__title {
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2F3035;
+  margin-bottom: 7px;
+}
+
+.sale-item__footer {
+  background: #F0F0F4;
+  padding: 25px 60px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.sale-item__footer span {
+  font-family: 'Barlow-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1c63cd;
+  display: block;
+}
+
+.sale-item__img {
+  max-width: 125px;
+  margin: 0 auto;
+}
+
+.search__tabs {
+  margin-bottom: 25px;
+}
+
+.search__tabs-item {
+  padding: 11px 26px 12px;
+}
+
+.search__tabs-item--active {
+  border-radius: 5px;
+  background: #F0F0F4;
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.search__content-item {
+  display: none;
+}
+
+.search__content-item--active {
+  display: block;
+}
+
+.search__content-form {
+  display: flex;
+}
+
+.search__content-input {
+  background: #F0F0F4;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  line-height: 19px;
   width: 100%;
-  height: 100%;
+}
+
+.search__content-input::placeholder {
+  color: #656464;
+}
+
+.search__content-btn {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #1C62CD;
+  border-radius: 3px;
+  padding: 17px 41px;
+  border: none;
+  margin-left: -3px;
 }
