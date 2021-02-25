@@ -26,7 +26,10 @@ $($(this).attr('href')).addClass('tabs-content--active')
   $('.product-slider').slick({
 infinite: true,
   slidesToShow: 4,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  arrows: true,
+prevArrow:'<button class="banner-section__slider-btn banner-section__slider-btnPrev"><img src="images/products/arrow-black-prev.svg">',
+nextArrow:'<button class="banner-section__slider-btn banner-section__slider-btnNext"><img src="images/products/arrow-black-next.svg">'
 
   });
 });
