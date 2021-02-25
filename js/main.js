@@ -18,4 +18,15 @@ $('.tab').on('click', function(e){
   $(this).addClass('tab--active');
 $($(this).attr('href')).addClass('tabs-content--active')
   });
+
+  $('.product-item__favorite').on('click', function(){
+    $('.product-item__favorite').toggleClass('product-item__favorite--active')
+  });
+
+  $('.product-slider').slick({
+infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1
+
+  });
 });

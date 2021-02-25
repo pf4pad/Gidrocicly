@@ -1,13 +1,144 @@
+
 .product-item
   border: 1px solid #CDCDCD
   border-radius: 3px
-
-  &__favorite
-
+  text-align: center
+  padding: 52px 20px 31px
+  transition: all 0.5s
+  min-height: 412px
+.product-item:hover
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25)
+  color: #1C62CD
+.product-item__wrapper
+  width: 271px
+  position: relative
+.product-item__favorite
+  position: absolute
+  top: 16px
+  right: 19px
+  width: 24px
+  height: 22px
+  background-color: transparent
+  border: none
+  outline: none
+  z-index: 5
+  cursor: pointer
+.product-item__favorite::before
+  content: ''
+  position: absolute
+  width: 24px
+  height: 22px
+  top: 0
+  left: 0
+  background-image: url('../images/products/favorite.svg')
+.product-item__favorite--active::before
+  background-image: url('../images/products/favorite--active.svg')
+  z-index: 10
+.product-item
   &__img
-
+    opacity: 1
   &__title
-
+    font-weight: normal
+    padding: 14px 0 7px
+    font-size: 18px
   &__price
-
+    font-family: 'Barlow-Bold', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 30px
+    line-height: 36px
+    margin-top: 18px
   &__basket
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 60px
+    height: 40px
+    border: none
+    background: #1C62CD
+    border-radius: 10px 0px 0px 0px
+    cursor: pointer
+    padding-top: 7px
+.product-item__hover-text
+  display: block
+  padding: 18px 35px
+  background-color: rgba(255, 255, 255, .9)
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+  border-radius: 3px
+  position: absolute
+  top: 30%
+  right: 0
+  transform: translateX(-7.5%)
+  opacity: 0
+  transition: all 0.9s
+  color: #2F3035
+.product-item:hover .product-item__hover-text
+  opacity: 1
+  transition: all 0.9s
+.product-item--sale::before
+  content: 'SALE'
+  padding: 8px 15px
+  background-color: #1C62CD
+  position: absolute
+  left: 0
+  top: 0
+  text-transform: uppercase
+  color: #fff
+  font-size: 12px
+  line-height: 14px
+  letter-spacing: 0.07em
+
+.product-item:hover .product-item__notify-text
+  color: #2F3035
+
+.product-item__wrapper.product-item__not-available .product-item__price
+  display: none
+.product-item__text
+  display: none
+
+.product-item__notify-text
+  display: none
+  font-weight: 700
+  font-size: 18px
+  line-height: 21px
+  color: #2F3035
+.product-item__wrapper.product-item__not-available .product-item__notify-text
+  display: block
+.product-item__wrapper.product-item__not-available .product-item__basket
+  display: none
+.product-item__notify-link
+  display: none
+.product-item__wrapper.product-item__not-available .product-item__notify-link
+  display: block
+  position: absolute
+  bottom: 25px
+  left: 0
+  right: 0
+  font-size: 16px
+  line-height: 19px
+  color: #1C62CD
+  text-align: center
+
+.product-item__wrapper.product-item__not-available .product-item__notify-link span
+  border-bottom: 1px solid #1C62CD
+.product-item__wrapper.product-item__not-available .product-item__img
+  opacity: 0.7
+.product-item__wrapper.product-item__not-available:hover .product-item__img
+  opacity: 1
+.product__title
+  font-family: 'Barlow-Bold', sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 25px
+  line-height: 30px
+  color: #2F3035
+  margin-bottom: 25px
+.products__tabs
+  margin-bottom: 25px
+.products__tab + .products__tab
+  margin-left: 50px
+.products__tab
+  padding-bottom: 10px
+
+.products__tab.tab--active
+  border-bottom: 2px solid #1C62CD
