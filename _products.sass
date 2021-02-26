@@ -48,17 +48,20 @@
     font-size: 30px
     line-height: 36px
     margin-top: 18px
-  &__basket
-    position: absolute
-    right: 0
-    bottom: 0
-    width: 60px
-    height: 40px
-    border: none
-    background: #1C62CD
-    border-radius: 10px 0px 0px 0px
-    cursor: pointer
-    padding-top: 7px
+.product-item__basket
+  position: absolute
+  right: 0
+  bottom: 0
+  width: 60px
+  height: 40px
+  border: none
+  background: #1C62CD
+  border-radius: 10px 0px 0px 0px
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 10
 .product-item__hover-text
   display: block
   padding: 18px 35px
@@ -142,3 +145,42 @@
 
 .products__tab.tab--active
   border-bottom: 2px solid #1C62CD
+
+// стилизация стрелок слайдера для products
+
+.product-slider__slider-btn
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  background: transparent
+  border: none
+  margin: 0
+  padding: 0
+  z-index: 5
+  cursor: pointer
+.product-slider__slider-btnPrev
+  right: -20px
+.product-slider__slider-btnNext
+  left: -40px
+
+.slick-slide img
+  display: inline
+
+.product
+  margin-bottom: 80px
+
+.product__more
+  text-align: center
+  margin: 35px 0 0
+.product__more-link
+  display: inline-block
+  font-size: 15px
+  line-height: 18px
+  letter-spacing: 0.12em
+  text-transform: uppercase
+  color: #2F3035
+  background: #F0F0F4
+  padding: 17px 60px
+.banner
+  margin-top: 86px
+  margin-bottom: 72px
