@@ -139,7 +139,7 @@ body {
 .basket__num {
   position: absolute;
   bottom: -3px;
-  right: -10px;
+  right: -15px;
   width: 20px;
   height: 20px;
   background: #1C62CD;
@@ -840,7 +840,7 @@ body {
 }
 
 .footer__bottom-link:first-child {
-  margin-left: 105px;
+  margin-left: 110px;
 }
 
 .footer__bottom-link + .footer__bottom-link {
