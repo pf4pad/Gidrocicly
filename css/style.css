@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Barlow-Bold', sans-serif;
   src: url("../fonts/Barlow-Bold.ttf") format("ttf");
@@ -1003,4 +1004,130 @@ button {
   display: inline-block;
   border-bottom: 2px solid #1C62CD;
   padding-bottom: 7px;
+}
+
+.aside-filter__item-drop {
+  margin: 40px 0;
+}
+
+.aside-filter__item-title {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2F3035;
+  padding-left: 26px;
+}
+
+.filter__item-drop {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter__item-drop::before {
+  content: '';
+  position: absolute;
+  background-image: url("../images/catalog/arrow-down.svg");
+  left: 0;
+  bottom: 5px;
+  width: 12px;
+  height: 8px;
+}
+
+.filter__item-drop--active::before {
+  transform: rotate(180deg);
+}
+
+.aside-filter__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.aside-filter__content-box {
+  width: 50%;
+}
+
+.aside-filter__content-label {
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.jq-checkbox,
+.jq-radio {
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #c4c4c4;
+  border-radius: 1px;
+  box-shadow: none;
+  vertical-align: -2px;
+  margin-right: 8px;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+  background: #1C62CD;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  width: 8px;
+  height: 4px;
+  margin: 3px 0 0 2px;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: rotate(-50deg);
+}
+
+.jq-radio.checked .jq-radio__div {
+  width: 0;
+  height: 0;
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.aside-filter__content.aside-filter__content-radio {
+  flex-wrap: nowrap;
+}
+
+.irs--flat {
+  width: 100%;
+  margin-top: -10px;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+  display: none;
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+  top: 60px;
+  font-family: 'Barlow-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #2F3035;
+  background: transparent;
+  border-radius: none;
+  visibility: visible !important;
+}
+
+.irs-min::before,
+.irs-max::before {
+  padding-right: 5px;
+  line-height: 17px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.irs-min::before {
+  content: 'от';
+}
+
+.irs-max::before {
+  content: 'до';
 }
