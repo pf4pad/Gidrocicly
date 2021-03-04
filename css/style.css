@@ -1095,11 +1095,16 @@ button {
 
 .irs--flat {
   width: 100%;
-  margin-top: -10px;
+  margin-top: 20px;
 }
 
 .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
-  display: none;
+  color: #48494D;
+  background-color: transparent;
+}
+
+.irs--flat .irs-from::before, .irs--flat .irs-to::before, .irs--flat .irs-single::before {
+  border-top-color: #48494D;
 }
 
 .irs--flat .irs-min, .irs--flat .irs-max {
@@ -1108,20 +1113,22 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  text-decoration-line: underline;
+  text-decoration: underline;
   color: #2F3035;
   background: transparent;
   border-radius: none;
   visibility: visible !important;
+  padding-left: 27px;
 }
 
 .irs-min::before,
 .irs-max::before {
-  padding-right: 5px;
+  position: absolute;
   line-height: 17px;
   text-decoration: none;
   font-size: 14px;
   color: #c4c4c4;
+  left: 0;
 }
 
 .irs-min::before {
@@ -1130,4 +1137,30 @@ button {
 
 .irs-max::before {
   content: 'до';
+}
+
+.irs--flat .irs-line {
+  top: 25px;
+  height: 1px;
+  background-color: #E0E0E0;
+  border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+  top: 25px;
+  height: 3px;
+  background: #1C62CD;
+}
+
+.irs--flat .irs-handle {
+  top: 22px;
+  width: 7px;
+  height: 7px;
+  background-color: #1C62CD;
+  border-radius: 50%;
+}
+
+.irs--flat .irs-handle > i:first-child,
+.irs--flat .irs-handle.state_hover > i:first-child, .irs--flat .irs-handle:hover > i:first-child {
+  background: transparent;
 }
