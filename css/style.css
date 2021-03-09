@@ -1337,3 +1337,67 @@ button {
   transform: translateX(-67%);
   z-index: 5;
 }
+
+.filter-btn__send {
+  background: #F0F0F4;
+  padding: 16px 85px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #BDBEC2;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.filter-btn__send--active {
+  background-color: #1c62cd;
+  color: #fff;
+}
+
+.filter__extra {
+  font-size: 13px;
+  line-height: 16px;
+  color: #2F3035;
+  text-align: center;
+  position: relative;
+  padding-right: 29px;
+  display: inline-block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.filter__extra::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  background-image: url("../images/catalog/arrow-down.svg");
+  width: 12px;
+  height: 8px;
+  top: 4px;
+}
+
+.filter__extra-content {
+  display: none;
+}
+
+.filter-btn__reset {
+  font-size: 13px;
+  line-height: 16px;
+  color: #C4C4C4;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #C4C4C4;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.aside-filter__item-btn {
+  text-align: center;
+}
+
+.filter__extra.filter__item-drop--active::after {
+  transform: rotate(180deg);
+}
