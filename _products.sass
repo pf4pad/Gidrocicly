@@ -1,4 +1,5 @@
-
+.product-item
+  width: 100%
 .product-item
   border: 1px solid #CDCDCD
   border-radius: 3px
@@ -6,12 +7,16 @@
   padding: 52px 20px 31px
   transition: all 0.5s
   min-height: 412px
+
 .product-item:hover
   box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25)
   color: #1C62CD
 .product-item__wrapper
   width: 271px
   position: relative
+
+.product-item__wrapper.product-item__wrapper--list
+  width: 100%
 .product-item__favorite
   position: absolute
   top: 16px
@@ -65,17 +70,18 @@
   z-index: 10
 .product-item__hover-text
   display: block
-  padding: 18px 35px
+  padding: 18px 33px
   background-color: rgba(255, 255, 255, .9)
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
   border-radius: 3px
   position: absolute
-  top: 30%
-  right: 0
-  transform: translateX(-7.5%)
+  top: 50%
+  right: 50%
+  transform: translate(50%,-50%)
   opacity: 0
-  transition: all 0.9s
+  transition: all 0.5s
   color: #2F3035
+  min-width: 234px
 .product-item:hover .product-item__hover-text
   opacity: 1
   transition: all 0.9s
