@@ -1444,3 +1444,106 @@ button.catalog__filter-btnline {
 .filter__extra.filter__item-drop--active::after {
   transform: rotate(180deg);
 }
+
+.product-card__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card__img-box {
+  width: 500px;
+  padding-top: 64px;
+  text-align: center;
+  position: relative;
+}
+
+.product-card__img-box::before {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  padding: 13px 25px;
+  border-radius: 3px;
+}
+
+.product-card__price-old {
+  font-family: 'Barlow-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #2F3035;
+  opacity: 0.6;
+  display: inline-block;
+  background-image: url(../images/old-line-product.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 6px;
+}
+
+.product-card__price-new {
+  font-family: 'Barlow-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #2F3035;
+}
+
+.product-card__link {
+  font-size: 15px;
+  line-height: 18px;
+  color: #1C62CD;
+}
+
+.product-card__content {
+  width: 570px;
+}
+
+.product-card__title {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2F3035;
+  margin-bottom: 10px;
+}
+
+.product-card__code {
+  font-size: 15px;
+  line-height: 18px;
+  color: #2F3035;
+  opacity: 0.6;
+  margin-bottom: 22px;
+}
+
+.product-card__buttons {
+  margin-bottom: 50px;
+}
+
+.product-card__tab {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F3035;
+  opacity: 0.6;
+  padding-right: 17px;
+  margin-bottom: 5px;
+}
+
+.product-card__tab + .product-card__tab {
+  padding-left: 17px;
+}
+
+.product-card__tab.tab--active {
+  opacity: 1;
+  border-bottom: 2px solid #1c62cd;
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-weight: bold;
+  color: #2F3035;
+}
+
+.product-card__item {
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #818285;
+  padding: 15px 0 6px;
+}
