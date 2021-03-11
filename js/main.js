@@ -64,4 +64,13 @@ $(".js-range-slider").ionRangeSlider({
     $('.product-item__wrapper').addClass('product-item__wrapper--list');
   });
 
+
+     $(".rate-yo").rateYo({
+        
+        spacing   : "7px",
+        starWidth: "23px",
+        ratedFill  : "#1C62CD",  //BLUE
+        normalFill: "#C4C4C4"
+      });
+ 
 });

@@ -1523,8 +1523,7 @@ button.catalog__filter-btnline {
 .product-card__tab {
   font-size: 20px;
   line-height: 24px;
-  color: #2F3035;
-  opacity: 0.6;
+  color: #C4B5B6;
   padding-right: 17px;
   margin-bottom: 5px;
 }
@@ -1534,9 +1533,8 @@ button.catalog__filter-btnline {
 }
 
 .product-card__tab.tab--active {
-  opacity: 1;
   border-bottom: 2px solid #1c62cd;
-  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-family: 'SFProDisplay-Semibold', sans-serif;
   font-weight: bold;
   color: #2F3035;
 }
@@ -1544,10 +1542,11 @@ button.catalog__filter-btnline {
 .product-card__item {
   font-size: 20px;
   line-height: 24px;
-  border-bottom: 1px solid #818285;
+  border-bottom: 1px solid rgba(47, 48, 53, 0.1);
   padding: 15px 0 6px;
   display: flex;
   justify-content: space-between;
+  color: #2F3035;
 }
 
 .product-card__item-left {
@@ -1556,4 +1555,34 @@ button.catalog__filter-btnline {
 
 .product-card__item-right {
   width: 125px;
+}
+
+.product-card__more {
+  font-size: 14px;
+  line-height: 17px;
+  color: #1c62cd;
+  border-bottom: 1px solid #1c62cd;
+  margin-bottom: 40px;
+}
+
+.product-card__list {
+  margin-bottom: 20px;
+}
+
+.product-card__btn button {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #1c62cd;
+  padding: 16px 53px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.product-card__buttons a + a {
+  margin-left: 30px;
 }
